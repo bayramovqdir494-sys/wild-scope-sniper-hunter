@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#1d3a20">
+<meta name="screen-orientation" content="landscape">
+<title>Wild Scope: Sniper Hunter</title>
+<link rel="icon" href="favicon.svg">
+<script src="https://sdk.crazygames.com/crazygames-sdk-v3.js"></script>
+  <script type="module" crossorigin src="./assets/index-CFhzl540.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DWgRMTUT.css">
+</head>
+<body>
+<div id="game"></div>
+<div id="scope"><div class="ring"></div><div class="rh"></div><div class="rv"></div><div class="dots"></div><div class="dot"></div></div>
+<div id="reddot"><div class="frame"></div><div class="dot"></div></div>
+<div id="hud">
+  <div id="tl"><div id="lvname"></div><div id="goals"></div><div id="timer"></div><div id="hpbar"><i></i></div></div>
+  <div id="tc"><div id="compass"><div id="cstrip"></div><div id="cmarks"></div><b></b></div><div id="windbox"><i id="windarrow">➤</i><span id="windtxt">0 m/s</span></div></div>
+  <div id="tr"><span id="cash" class="pill">$ 0</span><button id="pauseBtn" aria-label="Pause">❚❚</button></div>
+  <div id="cross"></div>
+  <div id="range"></div>
+  <div id="focus"><span>FOCUS</span><div><i></i></div></div>
+  <div id="slowmo">SLOW-MO</div>
+  <div id="hitmark"></div>
+  <div id="weap"><b id="wname"></b><span id="ammo"></span><small id="reloadTxt"></small></div>
+</div>
+<div id="touch">
+  <button class="btn" id="bSwitch"><span>⇄</span><small>SWITCH</small></button>
+  <button class="btn" id="bReload"><span>⟳</span><small>RELOAD</small></button>
+  <button class="btn" id="bScope"><span>◎</span><small>SCOPE</small></button>
+  <button class="btn" id="bShoot"><span>SHOOT</span></button>
+</div>
+<div id="bcam"><div class="bar t"></div><div class="bar b"></div><span>BULLET CAM</span><small>tap to skip</small></div>
+<div id="hurt"></div>
+<div id="toast"></div>
+<div id="lockHint">Click to aim · Mouse look</div>
+
+<div class="screen" id="menu">
+  <div class="panel title">
+    <h1>Wild Scope<em>SNIPER HUNTER</em></h1>
+    <div class="row"><span id="menuCash" class="pill">$ 0</span></div>
+    <button id="btnPlay" class="big">▶ HUNT</button>
+    <div class="grid">
+      <button id="btnLevels">🗺 Hunts</button>
+      <button id="btnShop">🛒 Gun Shop</button>
+      <button id="btnDaily">🎁 Daily <span class="badge"></span></button>
+    </div>
+    <div id="pcKeys">PC: <b>Mouse</b> look · <b>Left click</b> shoot · <b>Right click / Space</b> scope · <b>R</b> reload · <b>Q / 1-4</b> switch rifle · <b>Esc</b> pause</div>
+    <div class="row small"><button id="btnSound">🔊 Sound on</button><button id="btnFull">⛶ Fullscreen</button></div>
+  </div>
+</div>
+<div class="screen" id="levels"><div class="panel wide"><h2>🗺 Hunting Grounds <span id="starTotal" class="pill">⭐ 0</span></h2><div id="levelList"></div><button class="back">◀ Back</button></div></div>
+<div class="screen" id="shop"><div class="panel wide"><h2>🛒 Gun Shop <span id="shopCash" class="pill">$ 0</span></h2><div class="tabs"><button data-tab="rifles" class="on">Rifles</button><button data-tab="scopes">Scopes</button><button data-tab="gear">Gear</button></div><div id="shopList"></div><button class="back">◀ Back</button></div></div>
+<div class="screen" id="daily"><div class="panel wide"><h2>🎁 7-Day Reward</h2><div id="calendar"></div><p id="dailyMsg"></p><div class="row"><button id="btnClaim" class="big">Claim</button><button id="btnClaim2" class="big ad">▶ Claim x2</button></div><button class="back">◀ Back</button></div></div>
+<div class="screen" id="brief"><div class="panel"><h2 id="bTitle"></h2><div id="bMap"></div><ul id="bGoals"></ul><p id="bTip"></p><div id="bRifles"></div><div class="row"><button id="btnGo" class="big">▶ START</button></div><button class="back">◀ Back</button></div></div>
+<div class="screen" id="pause"><div class="panel"><h2>Paused</h2><button id="btnResume" class="big">▶ Resume</button><div class="row"><button id="btnRestart">↻ Restart</button><button id="btnQuit">⌂ Menu</button></div></div></div>
+<div class="screen" id="result"><div class="panel"><h2 id="rTitle"></h2><div id="rStars"></div><div id="rStats"></div><div id="rCash"></div><div class="row"><button id="btnDouble" class="big ad">▶ x2 Cash</button></div><div class="row"><button id="btnRetry">↻ Retry</button><button id="btnNext" class="big">Next ▶</button><button id="btnMenu">⌂ Menu</button></div></div></div>
+<div id="rotate"><div>📱↻<br>Rotate your phone to landscape</div></div>
+<div id="adblock"><div>Advertisement…</div></div>
+<div id="loading"><h1>Wild Scope<em>SNIPER HUNTER</em></h1><div class="lb"><div id="loadbar"></div></div></div>
+</body>
+</html>
